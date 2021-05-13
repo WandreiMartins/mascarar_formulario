@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #4a2339;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a2339 url(img/fundo-contato.jpg) no-repeat;
+    background-position: cover;
+}
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: #4a2339;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 100px; */
+    
+}
+.inputs label{
+    color: #fff;
+}
+
+.inputs input{
+    height: 30px;
+    width: 100%;
+
+}
+
+.form-control{
+    margin: 0px 10px 10px 10px;
+    width: 350px;
+}
+
+.texto{
+    color: #fff;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 334px;
+    height: auto;
+   
+    
+}
+.btns button{
+    background-color:#55a098;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    height: 25px;
+    width:  100px; 
+    margin-bottom: 10px;
+}
+.btns button:hover{
+    background-color:#63bbb2af;
+    cursor: pointer;
+}
+.mask{
+    position: relative;
+    color:#fff ;
+    background-color: #00000050;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    /* margin-bottom: 5px; */
+    border: none;
+    outline: none;
+
+}
+.divBtnCopy{
+    position: relative;
+}
+.maskBtn{
+    position: absolute;
+    font-size: 10px;
+    border: none;
+    padding: 3px;
+    outline: none;
+    top: -24px;
+    right: 5px;
+    cursor: pointer;
+    background-color: #69475a;
+    color: rgb(207, 207, 207);
+}
+.maskBtn:hover{
+    background-color: #8d627a;
+    color: #fff;
+}
+.texto p{
+    font-size: 13px;
+}
+
+

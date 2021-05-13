@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mask-stilo.css">
+    <title>Phac Soluções Tecnológicas &#8211; Phac Soluções Tecnológicas</title>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+    <main>
+        <form action="" id="form">
+            <div class=" inputs">
+                <div class="form-control">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" class="" id="nome" data-js="nome" onblur="maskNome()">
+                    <input type="text" id="inputNome" class="mask">
+                    <div id="nomec" class="divBtnCopy"></div>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label><br>
+                    <input type="email" class="" id="email" onblur="execute()" data-email="email">
+                    <input type="text" id="inputEmail" class="mask">
+                    <div id="emailc" class="divBtnCopy"></div>
+                </div>
+                <div class="form-control">
+                    <label for="cpf">CPF:</label><br>
+                    <input class="" id="cpf" data-js="cpf" oninput="executeCpf()">
+                    <input type="text" id="inputCpf" class="mask">
+                    <div id="cpfc" class="divBtnCopy"></div>
+                </div>
+                <div class="form-control">
+                    <label for="data">Data:</label><br>
+                    <input type="text" class="" id="data" data-js="data" onblur="maskDate()">
+                    <input type="text" id="inputData" class="mask">
+                    <div id="datac" class="divBtnCopy"></div>
+
+                </div>
+            </div>
+            <div class="texto">
+                <label for="texto">Mensagem:</label><br>
+                <textarea cols="50" rows="14" id="texto">
+
+                </textarea><br>
+
+                <div class="btns">
+
+                    <button type="button" class="btn-1" onclick="acharEmail()">Email</button>
+
+                    <button onclick="acharCpf()" type="button" class="btn-1">CPF</button>
+
+                    <button onclick="acharCpfEmail()" type="button" class="btn-2">CPF/Email</button>
+
+                    <button onclick="acharData()" type="button" class="btn-2">Data</button>
+
+                    <button onclick="acharTodos()" type="button" class="btn-1">Todos</button>
+                    <button onclick="limpar()" type="button" class="btn-1">Limpar</button>
+                </div>
+            </div>
+
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="mask-script.js"></script>
+    <script src="clipboard.js-master/dist/clipboard.min.js"></script>
+</body>
+
+</html>
